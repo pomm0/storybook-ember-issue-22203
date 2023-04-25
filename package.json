@@ -22,9 +22,12 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
-    "test:ember": "ember test"
+    "test:ember": "ember test",
+    "storybook": "start-storybook -p 6006 -s dist",
+    "build-storybook": "build-storybook -s dist"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.4",
     "@babel/eslint-parser": "^7.21.3",
     "@babel/plugin-proposal-decorators": "^7.21.0",
     "@ember/optional-features": "^2.0.0",
@@ -32,6 +35,15 @@
     "@ember/test-helpers": "^2.9.3",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
+    "@storybook/addon-actions": "^7.0.7",
+    "@storybook/addon-essentials": "^7.0.7",
+    "@storybook/addon-links": "^7.0.7",
+    "@storybook/builder-webpack5": "^7.0.7",
+    "@storybook/ember": "^7.0.7",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "babel-loader": "^8.3.0",
+    "babel-plugin-ember-modules-api-polyfill": "^3.5.0",
+    "babel-plugin-htmlbars-inline-precompile": "^5.3.1",
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^8.0.1",
     "ember-auto-import": "^2.6.3",
@@ -74,5 +86,6 @@
   },
   "ember": {
     "edition": "octane"
-  }
+  },
+  "dependencies": {}
 }
