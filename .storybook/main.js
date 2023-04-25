@@ -1,14 +1,12 @@
-module.exports = {
-  "stories": [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
-  "addons": [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials"
-  ],
-  "framework": "@storybook/ember",
-  "core": {
-    "builder": "@storybook/builder-webpack5"
+const config = {
+  stories: ['../stories/**/*.stories.mdx', '../stories/**/*.stories.@(js|jsx|ts|tsx)'],
+  framework: {
+    name: '@storybook/ember'
+  },
+  addons: ['@storybook/addon-mdx-gfm'],
+  docs: {
+    autodocs: true
   }
-}
+};
+
+export default config;

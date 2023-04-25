@@ -23,8 +23,8 @@
     "start": "ember serve",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
     "test:ember": "ember test",
-    "storybook": "start-storybook -p 6006 -s dist",
-    "build-storybook": "build-storybook -s dist"
+    "storybook": "storybook dev -p 6006 -s dist",
+    "build-storybook": "storybook build -s dist"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
@@ -38,9 +38,8 @@
     "@storybook/addon-actions": "^7.0.7",
     "@storybook/addon-essentials": "^7.0.7",
     "@storybook/addon-links": "^7.0.7",
-    "@storybook/builder-webpack5": "^7.0.7",
+    "@storybook/addon-mdx-gfm": "^7.0.7",
     "@storybook/ember": "^7.0.7",
-    "@storybook/manager-webpack5": "^6.5.16",
     "babel-loader": "^8.3.0",
     "babel-plugin-ember-modules-api-polyfill": "^3.5.0",
     "babel-plugin-htmlbars-inline-precompile": "^5.3.1",
@@ -75,6 +74,9 @@
     "prettier": "^2.8.7",
     "qunit": "^2.19.4",
     "qunit-dom": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.7",
     "stylelint": "^15.4.0",
     "stylelint-config-standard": "^32.0.0",
     "stylelint-prettier": "^3.0.0",
@@ -86,6 +88,5 @@
   },
   "ember": {
     "edition": "octane"
-  },
-  "dependencies": {}
+  }
 }
