@@ -1,4 +1,5 @@
-# storybook-ember-issue-22203
+# Reproduction repository for https://github.com/storybookjs/storybook/pull/22203
+
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
